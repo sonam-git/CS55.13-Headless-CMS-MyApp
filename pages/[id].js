@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
 import {getAllIds, getData} from '../lib/data';
-
+import Link from 'next/link'
 
 export async function getStaticProps({ params }) {
   const itemData = await getData (params.id);
@@ -36,10 +36,11 @@ content = itemData.post_content
       </div>
       <article className="card col-6 m-auto">
         <div className="card-body">
-            <h5 className="card-title">{result}</h5>
+            <p className="card-title">{result}</p>
         </div>
-        
-        
+        <Link href="/">
+            <a className="btn btn-primary mt-3 "  >← Back to home</a>
+          </Link>
       </article>
     </Layout>
   )

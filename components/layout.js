@@ -9,12 +9,12 @@ export default function Layout( { children, home } ) {
       </Head>
       
       <main>{children}</main>
-      {!home && (
+      {/*!home && (
           <Link href="/">
             <a className="btn btn-primary mt-3 "  >← Back to home</a>
           </Link>
         )
-      }
+      */}
       
     </div>
   );

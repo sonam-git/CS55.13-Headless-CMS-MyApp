@@ -31,7 +31,7 @@ export default function Home({allData}){
             <div className="list-group d-inline-flex">
                   {allData.map(({id, name})=>(
                     <Link key={id} href={id}>
-                    <a className='list-group-item list-group-active   '>
+                    <a className='list-group-item list-group-active '>
                       {name}
                     </a>
                     </Link>
