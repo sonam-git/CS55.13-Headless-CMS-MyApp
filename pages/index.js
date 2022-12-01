@@ -22,7 +22,7 @@ export default function Home({allData}){
     <div className='container'>
       <div className='row'>
       <div className='col-12'>
-          <h1 className="text-center p-2">Top 3 Highest Mountain In The World</h1>
+          <h1 className="text-center p-2">My Posts</h1>
           <h5 className="text-center p-2">Click the title below for more detail </h5>
       </div> 
       </div>
@@ -36,14 +36,10 @@ export default function Home({allData}){
                     </a>
                     </Link>
                   ))}
-                    
-       
        </div>
-      
         </div>
       </div>
-    </div>
-      
+    </div>  
     </Layout> 
   )
 }
