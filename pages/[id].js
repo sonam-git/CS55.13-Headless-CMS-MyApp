@@ -38,7 +38,7 @@ export default function Entry({itemData}){
         <div className="card-body ">
         <h6 className="card-subtitle mb-2 text-muted">Created: {itemData.post_date}</h6>
         <h6 className="card-subtitle mb-2 text-muted">By: {itemData.user_login}</h6>
-        <div className="card-text" dangerouslySetInnerHTML={{__html: itemData.post_content}}/>
+        <div className="card-text" dangerouslySetInnerHTML={{__html: itemData.acf_fields}}/>
         </div>
         <Link href="/">
             <a className="btn btn-primary mt-3 "  >← Back to home</a>

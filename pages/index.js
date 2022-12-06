@@ -9,8 +9,7 @@ export async function getStaticProps () {
   
   return {
       props: {
-          allData
-          
+          allData  
       }
   }
 };
