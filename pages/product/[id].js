@@ -1,5 +1,5 @@
-import Layout from '../components/layout';
-import {getAllIds, getData} from '../lib/data';
+import Layout from '../../components/layout';
+import {getAllIds, getData} from '../../lib/data2';
 import Link from 'next/link'
 
 export async function getStaticProps({ params }) {
@@ -8,7 +8,8 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       itemData
-    }
+    },
+    revalidate: 60
   };
 }
 
@@ -36,9 +37,7 @@ export default function Entry({itemData}){
       </div>
       <article className="card col-6 m-auto">
         <div className="card-body ">
-        <h6 className="card-subtitle mb-2 text-muted">Created: {itemData.post_date}</h6>
-        <h6 className="card-subtitle mb-2 text-muted">By: {itemData.user_login}</h6>
-        <div className="card-text" dangerouslySetInnerHTML={{__html: itemData.post_content}}/>
+        <div className="card-text" dangerouslySetInnerHTML={{__html: itemData.post_title}}/>
         <div className="card-text" dangerouslySetInnerHTML={{__html: itemData.acf_fields}}/>
         </div>
         <Link href="/">
