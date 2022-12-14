@@ -1,4 +1,4 @@
-<?php
+    <?php
 //everything between open and close php is interpreted on server
 
 //step 1. tell WP api to load our parent theme's css styles
