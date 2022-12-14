@@ -53,7 +53,7 @@ export default function Entry({ itemData }) {
   return (
     <Layout>
       <Center>
-        <Card bg="Gainsboro" border="3px black solid" width={["75%"]} borderRadius={15}>
+        <Card bg="AntiqueWhite" border="3px black solid" width={["75%"]} borderRadius={15}>
           <CardHeader>
             <Heading textAlign={"center"}>{itemData.post_title}</Heading>
           </CardHeader>

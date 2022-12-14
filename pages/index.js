@@ -23,7 +23,7 @@ export default function Home({ allData, productData, addressData }) {
       <Head>
         <title>Headless CMS App</title>
       </Head>
-      <Box border="2px solid black" borderRadius={15}>
+      <Box border="2px solid black" borderRadius={15} bg="AntiqueWhite">
         <Heading
           bg="teal"
           padding="0.5rem 0"
@@ -49,7 +49,7 @@ export default function Home({ allData, productData, addressData }) {
                     color: "teal.500",
                     transform: "scale(0.9)",
                   }}
-                  bg="Gainsboro"
+                  bg="white"
                   border="2px solid black"
                   height="90px"
                   borderRadius={15}
@@ -73,7 +73,7 @@ export default function Home({ allData, productData, addressData }) {
                     color: "teal.500",
                     transform: "scale(0.9)",
                   }}
-                  bg="Gainsboro"
+                  bg="white"
                   border="2px solid black"
                   height="90px"
                   borderRadius={15}
@@ -97,7 +97,7 @@ export default function Home({ allData, productData, addressData }) {
                     color: "teal.500",
                     transform: "scale(0.9)",
                   }}
-                  bg="Gainsboro"
+                  bg="white"
                   border="2px solid black"
                   height="90px"
                   borderRadius={15}
