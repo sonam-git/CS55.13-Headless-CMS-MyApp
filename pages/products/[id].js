@@ -42,13 +42,10 @@ export default function Entry({ itemData }) {
       var y = JSON.parse(x);
      console.log(y);
 
-     let image = y.product_url;
-  console.log("image:" + image);
-  //since the previous code removed the colon, I just decided to slice the https and add it back with a colon
-  
-  console.log("image fix:" + image);
-  image = "https:" + image;
-  console.log("fixed?:" + image);
+     let image = y.image;
+     image = image.slice(5);
+     image = "https:" + image;
+     
     
   return (
     <Layout>
@@ -60,7 +57,7 @@ export default function Entry({ itemData }) {
           <CardBody  className="card  mx-2 text-bg-light mb-3">
           <Image
               borderTop="2px black solid"
-              src={y.image}
+              src={image}
               alt={y.product_title}
               w="100%"
             />

@@ -7,7 +7,7 @@ export default function Layout({ children, home }) {
       <Head>
         <title>Final Project App</title>
       </Head>
-
+  
       <main>{children}</main>
       <Center m="1em">
         <Button  borderRadius={15}

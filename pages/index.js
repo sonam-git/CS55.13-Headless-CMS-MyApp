@@ -1,8 +1,10 @@
 import Head from "next/head";
-import { Box, Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
 import { getSortedList } from "../lib/data";
 import { getSortedProductList } from "../lib/productData";
 import { getSortedAddressList } from "../lib/addressData";
+
+
 
 export async function getStaticProps() {
   const allData = await getSortedList();
@@ -19,11 +21,14 @@ export async function getStaticProps() {
 
 export default function Home({ allData, productData, addressData }) {
   return (
+    
     <Box>
       <Head>
         <title>Headless CMS App</title>
       </Head>
+     
       <Box border="2px solid black" borderRadius={15} bg="AntiqueWhite">
+       
         <Heading
           bg="teal"
           padding="0.5rem 0"
@@ -110,6 +115,7 @@ export default function Home({ allData, productData, addressData }) {
         </Box>
       </Box>
     </Box>
+    
    
   );
 }

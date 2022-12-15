@@ -401,6 +401,13 @@
   dependencies:
     "@chakra-ui/shared-utils" "2.0.3"
 
+"@chakra-ui/icons@^2.0.13":
+  "integrity" "sha512-86X+NXAr2N/whkp8vNt0Qf5udqSPVc3lAe4U4w7SkSa/+PnDggfAM6Sc5HwLp8Er0h/RF97DuwFi9YZ/ZRJCDA=="
+  "resolved" "https://registry.npmjs.org/@chakra-ui/icons/-/icons-2.0.13.tgz"
+  "version" "2.0.13"
+  dependencies:
+    "@chakra-ui/icon" "3.0.13"
+
 "@chakra-ui/image@2.0.12":
   "integrity" "sha512-uclFhs0+wq2qujGu8Wk4eEWITA3iZZQTitGiFSEkO9Ws5VUH+Gqtn3mUilH0orubrI5srJsXAmjVTuVwge1KJQ=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/image/-/image-2.0.12.tgz"
@@ -2098,10 +2105,10 @@
   "resolved" "https://registry.npmjs.org/form-data-encoder/-/form-data-encoder-2.1.3.tgz"
   "version" "2.1.3"
 
-"framer-motion@^7.8.0", "framer-motion@>=4.0.0":
-  "integrity" "sha512-Yzbc0RGzKnkdRxPZbJIVtizX40hLGErXBRI6Uz1WE0OLNZpZqqZa9HaI/sdAhrx4215uczQ+m3C9PA+pwHf+gA=="
-  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-7.8.0.tgz"
-  "version" "7.8.0"
+"framer-motion@^7.9.1", "framer-motion@>=4.0.0":
+  "integrity" "sha512-oYZkESoGsLAc5P+ycz+IrPEkXB9i+e1LeIMZczO8cHKSo5LW4r4JXan9wRjn2u77Zn59K0UK1kGjxcNyLzbFPQ=="
+  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-7.9.1.tgz"
+  "version" "7.9.1"
   dependencies:
     "@motionone/dom" "^10.15.3"
     "hey-listen" "^1.0.8"
